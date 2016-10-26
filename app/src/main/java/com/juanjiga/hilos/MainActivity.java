@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button button;
+    Button boton;
     TextView textView;
 
     @Override
