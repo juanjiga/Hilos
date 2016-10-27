@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button boton;
+    Button button;
     TextView textView;
 
     @Override
@@ -16,14 +16,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        boton = (Button) findViewById(R.id.button);
+        button = (Button) findViewById(R.id.button);
         textView = (TextView) findViewById((R.id.textView));
 
-        boton.setOnClickListener(this);
+        button.setOnClickListener(this);
+    }
+    void UnSegundo(){
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    void Hilos(){
+
     }
 
     @Override
     public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.button:
+                textView.setText("empezamos");
+            for (int i=0; i<=10; i++){
+                textView.setText("Segundo " + i);
+                UnSegundo();
+            }
+            break;
+
+        default:
+            break;
+        }
 
     }
 }
