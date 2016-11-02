@@ -7,13 +7,11 @@
                 android:startColor="#F2E60F"
                 android:endColor="#000000"
                 android:angle="90"
-                />
-
-
+                 />
+             <coners
+                android:radius="@dimen/redondeo"
+                 />
         </shape>
-
-
     </item>
-
 
 </selector>

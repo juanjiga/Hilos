@@ -9,6 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo__degradado"
     tools:context="com.juanjiga.hilos.MainActivity"
     android:orientation="vertical">
 
@@ -23,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="13dp"/>
@@ -32,7 +33,7 @@
         android:text="Hilo Java"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="19dp"
@@ -44,9 +45,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:id="@+id/button3"
-        android:layout_below="@+id/button2"
+        android:background="@drawable/boton_degradado"
+        android:layout_below="@+id/button3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        tools:textColor="#FFFF" />
 
     <ProgressBar
         style="?android:attr/progressBarStyleHorizontal"
